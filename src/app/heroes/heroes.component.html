@@ -1,0 +1,8 @@
+<div *ngFor="let status of items">
+  <div [ngStyle]="{'background-color': status.color}" (click)="changeColor($event, status)">
+    <h2 ng-click="changeColor($event, status)">{{status.type}} Details</h2>
+    <div><span>id: </span>{{status.id}}</div>
+    <div><span>name: </span>{{status.type | uppercase}}</div>
+    <div><span>color: </span>{{status.color}}</div>
+  </div>
+</div>
